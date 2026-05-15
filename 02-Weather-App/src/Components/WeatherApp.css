@@ -1,0 +1,180 @@
+/* ===== CONTAINER STYLES ===== */
+.container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: linear-gradient(to right, #f3b07c, #fcd283);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Remove scrollbars */
+}
+/* ===== WEATHER APP CARD ===== */
+
+/* Weather Image */
+.weather img {
+    margin-top: -9rem; /* Moves image upward */
+}
+
+.weather-app {
+    width: 35rem; /* 350px*/
+    height: 65rem; /* 650px*/
+    background-image: linear-gradient(to top, #f3b07c, #fcd283);
+    border-radius: 3rem; /* Rounded corners */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2rem;
+    box-shadow: -3rem 1rem 6rem rgba(0, 0, 0, 0.1);
+    position: relative; /* For absolute positioning of children */
+}
+
+/* ===== SEARCH SECTION ===== */
+.search {
+    display: flex;
+    flex-direction: column; /* Stack search items vertically */
+    row-gap: 1rem; /* Space between top and input */
+}
+
+/* Search Top (Location) */
+.search-top {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem; /* Space between icon and text */
+}
+
+.search-top i {
+    font-size: 1.6rem;
+    color: #2f2357;
+}
+
+.search-top div {
+    font-size: 1.6rem;
+    color: #484569;
+    letter-spacing: 0.1rem;
+}
+
+/* Search Bar */
+.search-bar {
+    position: relative; /* For positioning the search icon */
+}
+
+.search-bar input {
+    width: 25rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.2rem solid #676394;
+    border-radius: 3rem; /* Rounded input */
+    outline: none; /* Remove default outline */
+    padding: 1rem 3rem 1rem 1rem; /* Space for icon on right */
+    font-size: 1.6rem;
+    color: #484569;
+}
+
+/* Placeholder Styling */
+.search-bar input::placeholder {
+    font-size: 1.4rem;
+    color: #676394;
+    letter-spacing: 0.1rem;
+}
+
+/* Hide placeholder when focused */
+.search-bar input:focus::placeholder {
+    color: transparent; /* Hide placeholder when typing */
+}
+
+/* Search Icon */
+.search-bar i  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Perfect vertical centering */
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: #2f2e57;
+    cursor: pointer;
+}
+
+.loader {
+    width: 5rem;
+    margin-top: 10rem;
+}
+
+.not-found {
+    font-size: 3rem;
+    color: #484569;
+    margin-top: 5rem;
+    text-shadow: -.3rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* ===== WEATHER DISPLAY SECTION ===== */
+
+/* Weather Type Text */
+.weather-type {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%); /* Perfect horizontal center */
+    font-size: 2rem;
+    color: #484569;
+}
+
+/* Temperature */
+.temp {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 9rem; /* Very large text */
+    background-image: linear-gradient(to right, #2f2e57, #605d80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* Date Display */
+.weather-date {
+    position: absolute;
+    bottom: 22%; /* Position from bottom */
+    font-size: 1.6rem;
+    color: #484569;
+}
+
+/* ===== HUMIDITY & WIND DATA ===== */
+.weather-data {
+    width: 100%;
+    position: absolute;
+    bottom: 2rem; /* Stick to bottom */
+    display: flex;
+    column-gap: 2rem; /* Space between humidity & wind */
+    padding: 0 2rem; /* Horizontal padding only */
+}
+
+/* Individual Data Boxes (Humidity & Wind) */
+.weather-data > div {
+    flex: 1; /* Equal width boxes */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    row-gap: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* Data Labels (Humidity, Wind) */
+.data-name {
+    font-size: 1.6rem;
+    color: #605d80;
+}
+
+/* Data Icons */
+.weather-data i {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: -0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Data Values (35%, 3 km/h) */
+.data {
+    font-size: 2rem;
+    color: #2f2e57;
+}
