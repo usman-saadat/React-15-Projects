@@ -1,0 +1,29 @@
+/* ===== GOOGLE FONTS IMPORT ===== */
+/* Import two custom fonts from Google Fonts */
+/* Lilita One - a bold, rounded font for labels and inputs */
+/* Matemasie - a clean font for the main heading */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Matemasie&display=swap');
+
+/* ===== RESET DEFAULT STYLES ===== */
+/* Select EVERY element on the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lilita One', cursive;
+}
+
+/* ===== REM BASE SETUP ===== */
+/* Style for the root html element */
+html {
+  font-size: 62.5%;
+}
+
+/* ===== Making App Responsive ===== */
+
+/* scale down the base font size on small screens: */
+@media (max-width: 500px) {
+  html {
+    font-size: 50%; /* Makes 1rem = 8px (instead of 10px) */
+  }
+}

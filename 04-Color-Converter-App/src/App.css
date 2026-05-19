@@ -1,0 +1,129 @@
+/* ===== APP CONTAINER STYLES ===== */
+
+/* Styles for the main app div */
+.app {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+/* ===== CONVERTER BOX STYLES ===== */
+/* Main white/converter box that contains all inputs */
+.converter {
+  width: 90%;
+  max-width: 80rem;
+  height: 45rem;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  border-radius: 3rem;
+}
+
+/* Style for the h1 inside converter */
+.converter h1 {
+  font-family: "Matemasie", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  letter-spacing: 0.4rem;
+  margin-bottom: 3rem;
+}
+
+.rgb-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== SECTION HEADINGS STYLES ===== */
+/* Style for both RGB and Hex section headings */
+.rgb-section h2,
+.hex-section h2 {
+  font-size: 3.5rem;
+  color: #ff6757;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+/* ===== INPUT GROUPS CONTAINER ===== */
+/* Container that holds all three input groups (R, G, B) */
+.input-groups {
+  display: flex;
+}
+
+/* ===== INDIVIDUAL INPUT GROUP ===== */
+/* Each group that contains one label and one input */
+.input-group {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* ===== LABEL STYLES ===== */
+/* Styles for R, G, B labels */
+label {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+/* ===== INPUT FIELD STYLES ===== */
+/* Styles shared by both number inputs and text input */
+input[type="number"], input[type="text"] {
+  width: 12rem;
+  height: 4rem;
+  background-color: transparent;
+  border: none;
+  border-top: 0.2rem solid #ff6757;
+  border-bottom: 0.2rem solid #ff6757;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* ===== SPACING BETWEEN RGB INPUTS ===== */
+/* Apply margin-right to number inputs only (not the hex input) */
+input[type="number"] {
+  margin-right: 3rem;
+}
+
+/* ===== HIDE SPINNER ARROWS ===== */
+/* Target the up/down arrows that appear on number inputs */
+.input-group input[type="number"]::-webkit-outer-spin-button,
+.input-group input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.color-preview {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  inset: 0;
+  /* background-color: #ff6757; */
+  z-index: -1;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* ===== Making App Responsive ===== */
+@media (max-width: 500px) {
+  /* Make heading smaller */
+  .converter h1 {
+    font-size: 3.5rem;
+  }
+
+  /* Adjust converter box height */
+  .converter {
+    height: 60vh;
+    row-gap: 5rem;
+  }
+
+  /* Stack inputs vertically on mobile */
+  .input-groups {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
