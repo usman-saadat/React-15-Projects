@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Prompt", sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Internet Explorer and legacy Edge */
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@custom-variant dark (&:where(.dark, .dark *))
