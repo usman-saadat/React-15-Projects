@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+* {
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Dark Mode Variant in CSS */
+@custom-variant dark (&:where(.dark, .dark *));
