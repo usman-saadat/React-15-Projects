@@ -1,4 +1,4 @@
-I looked at your repo. It has 15 project folders (Calendar App through News & Blogs App) and no README yet. I couldn't see inside the folders, so I wrote this from your folder names and repo description. Check the tech details against what you actually used, and fill in the live demo links and screenshots.
+This repo has 15 project folders (Calendar App through News & Blogs App). 
 
 ````markdown
 # 🚀 React 15 Projects
@@ -64,27 +64,12 @@ A collection of 15 React projects, from a simple Calendar App to an AI Chatbot a
    npm run dev   # or npm start
    ```
 
-> **Note:** Projects that use APIs (Weather, AI Chatbot, News) need your own API key. Create a `.env` file in that project's folder and add your key (see the project's folder for details).
-
-## 📸 Screenshots
-
-Add screenshots or GIFs of your favorite projects here.
-
 ## 🤝 Connect
 
 **Usman Saadat**
 - GitHub: [@usman-saadat](https://github.com/usman-saadat)
-- LinkedIn: add your link
-- Email: add your email
+- Email: usmansaadat@gmail.com
 
 ⭐ If you found this helpful, consider giving the repo a star!
 ````
 
-A few tips to make it stronger:
-
-- **Add screenshots.** Put images in a `screenshots/` folder and link them. Recruiters skim, and visuals help a lot.
-- **Deploy each project** on Vercel or Netlify and paste the links into the table. Live demos matter more than the code for most visitors.
-- **Add a `.env.example`** to the API-based projects (Weather, Chatbot, News), and make sure no real API keys are committed.
-- **Add a short README inside each project folder** (what it does, features, how to run it) once you have time.
-
-If you tell me the exact tech used in a few projects (for example, which AI API the chatbot uses or whether you used Vite), I can tailor the descriptions.
